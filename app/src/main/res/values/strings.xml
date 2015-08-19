@@ -36,6 +36,6 @@
     <string name="button_equals">=</string>
     <string name="button_clear">C</string>
     <string name="button_signChange">+/-</string>
-    <string name="button_parenthesis">(  )</string>
+    <string name="button_parenthesis">( )</string>
     <string name="button_backspace">DEL</string>
 </resources>

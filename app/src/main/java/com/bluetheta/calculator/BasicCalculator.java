@@ -198,18 +198,21 @@ public class BasicCalculator extends Activity {
                 case "+/-":
                     //TODO Add sign change functionality
                     break;
-                case "(  )":
-                    if(textViewDisplay.getText().toString().equals("0")) {
-                        textViewDisplay.setText("(");
-                        parenthesisOpen = true;
+                case "( )":
+                    if(textViewDisplay.getText()=="0") {
+
+                    textViewDisplay.setText("(");
                     }
                     else if(!parenthesisOpen) {
-                        textViewDisplay.setText(textViewDisplay.getText().toString().concat("("));
+                        textViewDisplay.setText(textViewDisplay.getText().toString() + "(");
                         parenthesisOpen = true;
                     }
-                    else {
-                        textViewDisplay.setText(textViewDisplay.getText().toString().concat(")"));
+                    else{
+                        textViewDisplay.setText(textViewDisplay.getText().toString() + ")");
+                        parenthesisOpen = false;
                     }
+
+
                     break;
                 case "DEL":
                     StringBuilder currentDisplay = new StringBuilder(textViewDisplay.getText().toString());
