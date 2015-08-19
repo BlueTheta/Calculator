@@ -210,6 +210,7 @@ public class BasicCalculator extends Activity {
                     else{
                         textViewDisplay.setText(textViewDisplay.getText().toString() + ")");
                         parenthesisOpen = false;
+
                     }
 
 
